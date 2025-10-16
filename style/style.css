@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -157,4 +156,80 @@ body {
   padding: 15px;
   color: #fff;
   font-size: 14px;
+}
+
+
+@media (max-width: 480px) {
+  .principal {
+    background-image: url(../images/background.png);
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+  }
+
+  .contenido-principal {
+    width: 65%;
+    text-align: start;
+    margin-top: 70px;
+  }
+
+  .contenido-principal h1 {
+    font-size: 28px; 
+    line-height: 1.2; 
+ 
+  }
+
+  
+  .tarjetas-tour,
+  .tarjetas-precios {
+    display: flex;
+    justify-content: flex-start; 
+    gap: 15px;
+    flex-wrap: nowrap; 
+    overflow-x: auto; 
+    padding: 10px;
+  }
+
+  .tarjeta,
+  .tarjeta-precio {
+    flex-shrink: 0; 
+    width: 200px;
+    text-align: center;
+    font-size: 14px; 
+    padding: 10px;
+  }
+
+  .tarjeta h3,
+  .tarjeta-precio h3 {
+    font-size: 16px;
+    word-wrap: break-word;
+  }
+
+}
+
+
+@media (max-width: 920px) {
+  .principal {
+    background-image: url(../images/background.png);
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    max-width: 920px;
+    background-position: end;
+  }
+
+  .contenido-principal h1 {
+    font-size: 42px;
+  }
+}
+
+@media (max-width: 1279) {
+  .fondo {
+    width: 100%;
+    margin-top: 700px;
+  }
+
+  
 }
